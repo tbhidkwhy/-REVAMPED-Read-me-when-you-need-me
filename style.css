@@ -1,0 +1,95 @@
+.container-fluid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  /* Reduced alpha from 0.2 to 0.1 for more transparency */
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+}
+.card {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  
+}
+.card .btn-primary {
+  background-color: transparent !important;
+  color: #474646 !important;
+  border: 2px solid #474646 !important;
+  transition: all 0.3s ease;
+}
+
+.card .btn-primary:hover {
+  background-color: transparent !important;
+  color: #333333 !important;
+  border-color: #333333 !important;
+}
+
+
+body {
+  background-image: url('b25e04313eaf8c2f4f8f69d7b42f38df.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+
+
+
+
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(240, 248, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+  /* --- RESIZING & CENTERING LOGIC --- */
+  width: 90%;            /* Responsive width for small screens */
+  max-width: 650px;      /* Prevents it from covering the whole screen on desktop */
+  margin: 4rem auto;     /* Centers horizontally and adds vertical breathing room */
+  height: fit-content;   /* Only as tall as the content inside */
+  
+  /* --- TYPOGRAPHY & SHADOW --- */
+  font-size: 1.1rem;     /* Slightly reduced for better hierarchy */
+  line-height: 1.6;
+  box-shadow: 0 10px 30px rgba(2, 9, 58, 0.2);
+  font-family: 'Nunito', sans-serif !important;
+}
+
+
+
+
+.card img {
+  width: 100%;          
+  aspect-ratio: 1 / 1;  
+  object-fit: cover;     /* crop to fill square without distortion */
+  border-radius: 8px;    /* optional: smooth edges */
+  
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.6); /* white but 60% transparent */
+  backdrop-filter: blur(5px); /* adds glass-like blur */
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+    
